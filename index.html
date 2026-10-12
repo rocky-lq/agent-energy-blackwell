@@ -11,6 +11,8 @@
 <meta property="og:description" content="Full-stack energy profiling of agentic coding, mathematical reasoning and continuous serving on Blackwell GPUs. NeurIPS 2026 Workshop on Resource-Aware Agentic AI.">
 <meta property="og:url" content="https://rocky-lq.github.io/agent-energy-blackwell/">
 <meta property="og:image" content="https://rocky-lq.github.io/agent-energy-blackwell/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="citation_title" content="Where Does the Energy Go? Profiling LLM Agent Inference on Blackwell GPUs">
 <meta name="citation_author" content="Luo, Qi">
@@ -19,6 +21,7 @@
 <meta name="citation_author" content="Chen, Yun">
 <meta name="citation_publication_date" content="2026">
 <meta name="citation_arxiv_id" content="2609.29707">
+<meta name="citation_pdf_url" content="https://arxiv.org/pdf/2609.29707">
 <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -104,13 +107,13 @@
       <div class="bar-colhead" aria-hidden="true"><span></span><span></span><span>Outside GPU</span></div>
 
       <div class="bar-row">
-        <div class="bar-name">Agentic coding<small>SWE-bench Verified · 1,406 W</small></div>
+        <div class="bar-name"><span>Agentic coding</span><small>SWE-bench Verified · 1,406 W</small></div>
         <div class="bar-plot">
-          <div class="bar" role="img" aria-label="Agentic coding: GPU 55.9%, CPU 23.7%, DRAM 1.0%, Others 19.5%">
-            <span class="seg gpu" style="flex-grow:785" tabindex="0" data-name="GPU" data-row="Agentic coding" data-value="785 W" data-share="55.9%"></span>
-            <span class="seg cpu" style="flex-grow:333" tabindex="0" data-name="CPU" data-row="Agentic coding" data-value="333 W" data-share="23.7%"></span>
-            <span class="seg dram" style="flex-grow:14" tabindex="0" data-name="DRAM" data-row="Agentic coding" data-value="14 W" data-share="1.0%"></span>
-            <span class="seg oth" style="flex-grow:274" tabindex="0" data-name="Others" data-row="Agentic coding" data-value="274 W" data-share="19.5%"></span>
+          <div class="bar" role="group" aria-label="Agentic coding: GPU 55.9%, CPU 23.7%, DRAM 1.0%, Others 19.5%">
+            <span role="img" class="seg gpu" style="flex-grow:785" tabindex="0" data-name="GPU" data-row="Agentic coding" data-value="785 W" data-share="55.9%"></span>
+            <span role="img" class="seg cpu" style="flex-grow:333" tabindex="0" data-name="CPU" data-row="Agentic coding" data-value="333 W" data-share="23.7%"></span>
+            <span role="img" class="seg dram" style="flex-grow:14" tabindex="0" data-name="DRAM" data-row="Agentic coding" data-value="14 W" data-share="1.0%"></span>
+            <span role="img" class="seg oth" style="flex-grow:274" tabindex="0" data-name="Others" data-row="Agentic coding" data-value="274 W" data-share="19.5%"></span>
           </div>
           <div class="bar-labels" aria-hidden="true">
             <span style="flex-grow:785">55.9%</span><span style="flex-grow:333">23.7%</span><span style="flex-grow:14"></span><span style="flex-grow:274">19.5%</span>
@@ -120,13 +123,13 @@
       </div>
 
       <div class="bar-row">
-        <div class="bar-name">Mathematical reasoning<small>AIME, thinking on · 29,802 mJ/tok</small></div>
+        <div class="bar-name"><span>Mathematical reasoning</span><small>AIME, thinking on · 29,802 mJ/tok</small></div>
         <div class="bar-plot">
-          <div class="bar" role="img" aria-label="Mathematical reasoning: GPU 58.8%, CPU 23.5%, DRAM 0.9%, Others 16.7%">
-            <span class="seg gpu" style="flex-grow:17531" tabindex="0" data-name="GPU" data-row="Mathematical reasoning" data-value="17,531 mJ/tok" data-share="58.8%"></span>
-            <span class="seg cpu" style="flex-grow:7018" tabindex="0" data-name="CPU" data-row="Mathematical reasoning" data-value="7,018 mJ/tok" data-share="23.5%"></span>
-            <span class="seg dram" style="flex-grow:268" tabindex="0" data-name="DRAM" data-row="Mathematical reasoning" data-value="268 mJ/tok" data-share="0.9%"></span>
-            <span class="seg oth" style="flex-grow:4985" tabindex="0" data-name="Others" data-row="Mathematical reasoning" data-value="4,985 mJ/tok" data-share="16.7%"></span>
+          <div class="bar" role="group" aria-label="Mathematical reasoning: GPU 58.8%, CPU 23.5%, DRAM 0.9%, Others 16.7%">
+            <span role="img" class="seg gpu" style="flex-grow:17531" tabindex="0" data-name="GPU" data-row="Mathematical reasoning" data-value="17,531 mJ/tok" data-share="58.8%"></span>
+            <span role="img" class="seg cpu" style="flex-grow:7018" tabindex="0" data-name="CPU" data-row="Mathematical reasoning" data-value="7,018 mJ/tok" data-share="23.5%"></span>
+            <span role="img" class="seg dram" style="flex-grow:268" tabindex="0" data-name="DRAM" data-row="Mathematical reasoning" data-value="268 mJ/tok" data-share="0.9%"></span>
+            <span role="img" class="seg oth" style="flex-grow:4985" tabindex="0" data-name="Others" data-row="Mathematical reasoning" data-value="4,985 mJ/tok" data-share="16.7%"></span>
           </div>
           <div class="bar-labels" aria-hidden="true">
             <span style="flex-grow:17531">58.8%</span><span style="flex-grow:7018">23.5%</span><span style="flex-grow:268"></span><span style="flex-grow:4985">16.7%</span>
@@ -136,13 +139,13 @@
       </div>
 
       <div class="bar-row">
-        <div class="bar-name">Continuous serving<small>ShareGPT, 16 req/s · 1,375 W</small></div>
+        <div class="bar-name"><span>Continuous serving</span><small>ShareGPT, 16 req/s · 1,375 W</small></div>
         <div class="bar-plot">
-          <div class="bar" role="img" aria-label="Continuous serving at 16 requests per second: GPU 58.3%, CPU 24.7%, DRAM 0.9%, Others 15.9%">
-            <span class="seg gpu" style="flex-grow:802" tabindex="0" data-name="GPU" data-row="Continuous serving" data-value="802 W" data-share="58.3%"></span>
-            <span class="seg cpu" style="flex-grow:340" tabindex="0" data-name="CPU" data-row="Continuous serving" data-value="340 W" data-share="24.7%"></span>
-            <span class="seg dram" style="flex-grow:13" tabindex="0" data-name="DRAM" data-row="Continuous serving" data-value="13 W" data-share="0.9%"></span>
-            <span class="seg oth" style="flex-grow:219" tabindex="0" data-name="Others" data-row="Continuous serving" data-value="219 W" data-share="15.9%"></span>
+          <div class="bar" role="group" aria-label="Continuous serving at 16 requests per second: GPU 58.3%, CPU 24.7%, DRAM 0.9%, Others 15.9%">
+            <span role="img" class="seg gpu" style="flex-grow:802" tabindex="0" data-name="GPU" data-row="Continuous serving" data-value="802 W" data-share="58.3%"></span>
+            <span role="img" class="seg cpu" style="flex-grow:340" tabindex="0" data-name="CPU" data-row="Continuous serving" data-value="340 W" data-share="24.7%"></span>
+            <span role="img" class="seg dram" style="flex-grow:13" tabindex="0" data-name="DRAM" data-row="Continuous serving" data-value="13 W" data-share="0.9%"></span>
+            <span role="img" class="seg oth" style="flex-grow:219" tabindex="0" data-name="Others" data-row="Continuous serving" data-value="219 W" data-share="15.9%"></span>
           </div>
           <div class="bar-labels" aria-hidden="true">
             <span style="flex-grow:802">58.3%</span><span style="flex-grow:340">24.7%</span><span style="flex-grow:13"></span><span style="flex-grow:219">15.9%</span>
@@ -153,8 +156,9 @@
     </div>
 
     <p class="chart-note">Agentic coding and serving: average power. Reasoning: energy per output token.
-      Shares are each component divided by the system total reported in the paper. “Others” is the residual:
-      fans, VRM and PSU conversion losses, PCIe links, baseboard.</p>
+      Agentic-coding shares are as reported in the paper; the other two rows divide each component in the
+      paper’s Tables 1 and 2 by the system total. “Others” is the residual: fans, VRM and PSU conversion losses,
+      PCIe links, baseboard.</p>
 
     <details class="tableview">
       <summary>View as table</summary>
@@ -262,7 +266,7 @@
       execution, as utilization swings between near 100% and near 0%. System power generally remains elevated
       between inference bursts because the CPUs stay active during shell commands and test runs.</p>
     <figure class="fig">
-      <a class="zoom" href="static/figs/fig3.svg" aria-label="Open figure at full size"><img src="static/figs/fig3.svg" width="375" height="237" loading="lazy" alt="Power trace over eight hours: system power around 1,450 W with dips, GPU power around 800 W with drops during tool calls, CPU around 340 W, and GPU utilization dropping from 100% to 0% during tool execution"></a>
+      <a class="zoom" href="static/figs/fig3.svg" aria-label="Open figure at full size"><img src="static/figs/fig3.svg" width="375" height="237" loading="lazy" alt="Power trace over eight hours: system and GPU power are high during inference bursts and drop during tool calls, CPU power stays roughly flat, and GPU utilization swings between 100% and 0%"></a>
       <figcaption>Agent power trace over a selected 8 h window of SWE-bench execution. Top: component-level power.
         Bottom: GPU utilization.</figcaption>
     </figure>
@@ -274,7 +278,7 @@
       average system power changes little. Longer execution is the primary source of the increase, consistent with
       longer prefill as context accumulates across turns.</p>
     <figure class="fig">
-      <a class="zoom" href="static/figs/fig4.svg" aria-label="Open figure at full size"><img src="static/figs/fig4.svg" width="376" height="153" loading="lazy" alt="Two line charts over turn number 1 to 40: system energy per turn in kilojoules and turn duration in seconds, with matching shapes"></a>
+      <a class="zoom" href="static/figs/fig4.svg" aria-label="Open figure at full size"><img src="static/figs/fig4.svg" width="376" height="153" loading="lazy" alt="Two line charts over turn number, up to 40 turns: system energy per turn in kilojoules and turn duration in seconds, with matching shapes"></a>
       <figcaption>Per-turn system energy and duration across SWE-bench tasks. Light lines: individual tasks;
         bold: mean ±1σ.</figcaption>
     </figure>
@@ -337,7 +341,7 @@
       Serving at 4 requests per second behaves differently: 300 W gives the lowest energy per token
       (1,167 vs. 1,215 mJ/tok at 400 W).</p>
     <figure class="fig">
-      <a class="zoom" href="static/figs/fig6.svg" aria-label="Open figure at full size"><img src="static/figs/fig6.svg" width="376" height="155" loading="lazy" alt="Power cap sweep from 300 to 600 W per card. Reasoning: throughput near 48 tokens per second from 400 to 600 W and about 16 at 300 W. Serving: throughput between 950 and 1,160 tokens per second"></a>
+      <a class="zoom" href="static/figs/fig6.svg" aria-label="Open figure at full size"><img src="static/figs/fig6.svg" width="376" height="155" loading="lazy" alt="Power cap sweep from 300 to 600 W per card. Reasoning: throughput is flat from 400 to 600 W and drops sharply at 300 W, where energy per token jumps. Serving: throughput and energy per token vary modestly across caps"></a>
       <figcaption>Power cap sweep. (a) Reasoning, single request. (b) Serving, 4 requests per second. Throughput on
         the left axis, system energy per token on the right.</figcaption>
     </figure>
@@ -358,7 +362,8 @@
       <p>The energy cost of thinking is its extra output. Early stopping and budget-aware decoding may reduce it,
         subject to accuracy trade-offs.</p></div>
     <div class="card"><h3>Choose power caps per workload</h3>
-      <p>A 400 W cap costs reasoning nothing and 300 W is a cliff, while serving is most efficient at 300 W.</p></div>
+      <p>A 400 W cap costs reasoning no throughput and 300 W is a cliff, while serving at 4 req/s is most
+        efficient at 300 W.</p></div>
   </div>
   <p class="scope"><b>Scope.</b> One dual-GPU server and one 27B model, so generalization to other platforms and
     scales remains uncertain. There are no external PDU measurements for AC validation, and the “Others” category
