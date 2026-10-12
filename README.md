@@ -4,6 +4,7 @@ Project page for the paper, accepted at the NeurIPS 2026 Workshop on Resource-Aw
 
 - **Page:** https://rocky-lq.github.io/agent-energy-blackwell/
 - **Paper:** [arXiv:2609.29707](https://arxiv.org/abs/2609.29707)
+- **Poster and slides:** [poster](static/poster/poster.pdf), [slides](static/slides/slides.pdf)
 - **Authors:** Qi Luo, Kunlin Li, Ziwen Wang, Yun Chen (HKUST(GZ))
 
 ## Summary
@@ -26,6 +27,7 @@ static/css/style.css  styles
 static/js/main.js     chart tooltip and BibTeX copy button
 static/figs/          figures cropped from the paper (SVG)
 static/poster/        poster PDF and preview image
+static/slides/        talk slides (PDF)
 static/img/           favicon and social preview card
 ```
 
