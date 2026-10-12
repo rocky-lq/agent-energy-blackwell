@@ -19,7 +19,6 @@
 
   --radius: 10px;
   --wrap: 1000px;
-  --prose: 47rem;
 }
 
 * { box-sizing: border-box; }
@@ -195,7 +194,6 @@ h2 {
 }
 h3 { color: var(--ink); }
 p { margin: 0; }
-.prose { max-width: var(--prose); }
 .lede {
   max-width: 50rem;
   margin: 0 auto;
@@ -494,7 +492,7 @@ table.data .mk { margin-right: 11px; }
 .card { padding: 20px 22px 22px; border-radius: var(--radius); background: var(--tint); }
 .card h3 { margin: 0 0 6px; font-size: 18.5px; line-height: 1.3; }
 .card p { font-size: 16px; line-height: 1.55; }
-.scope { max-width: var(--prose); margin-top: 22px; font-size: 15.5px; color: var(--muted); }
+.scope { margin-top: 22px; font-size: 15.5px; color: var(--muted); }
 .scope b { color: var(--text); }
 
 /* ── Poster ── */
